@@ -12,7 +12,13 @@ from nltk.stem import PorterStemmer
 from textblob import Word
 import numpy as np
 
+# from tfidf_model import QuestionAnswer
+
+import tfidf_model  # my_module.py
+from importlib import reload # reload 
+reload(tfidf_model)
 from tfidf_model import QuestionAnswer
+
 
 
 app = Flask(__name__)
